@@ -367,12 +367,12 @@ fieldset {
 }
 
 .slide-1 {
-    background: url(../img/bg/slide1.jpg) scroll 0 0;
+    background: url(../img/bg/slide1.jpg) no-repeat scroll center;
     background-size: cover;
 }
 
 .slide-2 {
-    background: url(../img/bg/slide2.jpg) scroll 0 0;
+    background: url(../img/bg/slide2.jpg) no-repeat scroll center;
     background-size: cover;
 }
 
@@ -1144,11 +1144,15 @@ video {
 .single_team {
     overflow: hidden;
     width: 100%;
+    margin-bottom: 20px
 }
 
 @media only screen and (max-width: 768px) {
     .single_team {
-        margin-bottom: 40px
+        margin-bottom: 40px;
+    }
+    .single_team .team_img img {
+        height: auto;
     }
 }
 
@@ -1187,6 +1191,7 @@ video {
     -webkit-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
     width: 100%;
+    height: 368px;
 }
 
 /*.single_team:hover .team_img img {*/
