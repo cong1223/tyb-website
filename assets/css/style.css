@@ -376,6 +376,23 @@ fieldset {
     background-size: cover;
 }
 
+@media (max-width: 768px) {
+    .slide-1 {
+        background: url(../img/bg/slide1-m.jpg) scroll 0 0;
+        background-size: cover;
+    }
+
+    .slide-2 {
+        background: url(../img/bg/slide2-m.jpg) scroll 0 0;
+        background-size: cover;
+    }
+}
+
+.content {
+    margin-left: @ctnLeftSm;
+}
+}
+
 .slide-3 {
     background: url(../img/bg/slide3.jpg) scroll 0 0;
     background-size: cover;
