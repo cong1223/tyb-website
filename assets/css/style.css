@@ -873,7 +873,17 @@ video {
 }
 
 .sing_work_photo {
-    position: relative
+    position: relative;
+    background: #ffffff;
+}
+
+.sing_work_photo .news-desc {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .single_our_work img {
@@ -884,21 +894,6 @@ video {
 
 .single_our_work figure {
     margin-bottom: 0
-}
-
-.sing_work_text_link {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    color: #fff;
-    background: rgba(28, 186, 200, 0.65) none repeat scroll 0 0;
-    -webkit-transition: .4s;
-    transition: .4s;
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    visibility: hidden;
 }
 
 .sing_work_content_wrap {
@@ -912,71 +907,10 @@ video {
     vertical-align: middle;
 }
 
-.sing_work_text_link h4 {
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.single_our_work:hover .sing_work_text_link h4 {
-    -webkit-animation: fadeInDown 500ms ease-in-out;
-    animation: fadeInDown 500ms ease-in-out
-}
-
-.single_our_work:hover .sing_work_text_link p {
-    -webkit-animation: fadeInDown 600ms ease-in-out;
-    animation: fadeInDown 600ms ease-in-out
-}
-
 .sing_work_text_link p {
     margin: 10px 0 25px
 }
 
-.sing_link_img a i.fa {
-    font-size: 14px
-}
-
-.sing_link_img a {
-    background: #fff;
-    border-radius: 50%;
-    color: #333;
-    display: inline-block;
-    height: 40px;
-    line-height: 39px;
-    -webkit-transition: all 0.7s ease 0s;
-    transition: all 0.7s ease 0s;
-    width: 40px;
-}
-
-.sing_link_img a:hover {
-    background: #03a9f4;
-    color: #fff;
-}
-
-.sing_link_img a.search {
-    margin-right: 17px
-}
-
-.single_our_work:hover .sing_link_img a.search {
-    -webkit-animation: fadeInLeft 1000ms ease-in-out;
-    animation: fadeInLeft 1000ms ease-in-out
-}
-
-.single_our_work:hover .sing_link_img a.link {
-    -webkit-animation: fadeInRight 1000ms ease-in-out;
-    animation: fadeInRight 1000ms ease-in-out
-}
-
-.single_our_work:hover {
-    background: #03a9f4;
-    color: #fff;
-}
-
-.single_our_work:hover .sing_work_text_link {
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    visibility: visible;
-}
 
 .portfolio_btn {
     padding-top: 20px
@@ -1836,6 +1770,14 @@ video {
     margin-bottom: 25px;
     margin-right: 25px;
 }
+.placeholder {
+    opacity: 0;
+}
+@media only screen and (max-width: 768px) {
+    .placeholder {
+        display: none;
+    }
+}
 .clearfix:after{
     content: "";
     display: block;
@@ -1848,3 +1790,9 @@ video {
     width: 100%;
     height: 100%;
 }
+
+.work_all_item .news-img-item {
+    width: 360px;
+    height: 240px;
+}
+
