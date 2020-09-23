@@ -1821,8 +1821,12 @@ video {
     justify-content: space-between;
     padding-left: 20px;
     font-weight: bold;
-    color: #03a9f4;
+    color: #ffffff;
     font-size: 16px;
+}
+
+.nav-title .menu-shrink {
+    color: #313131;
 }
 
 @media (max-width: 768px) {
