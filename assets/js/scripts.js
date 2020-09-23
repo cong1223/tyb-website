@@ -27,10 +27,10 @@ Version      : 1.0
 			$(window).scroll(function() {
 			  if ($(this).scrollTop() > 100) {
 				  $('.menu-top').addClass('menu-shrink');
-				  $('.company-name').addClass('menu-shrink');
+				  $('.company-name').addClass('dark-theme');
 			  } else {
 				  $('.menu-top').removeClass('menu-shrink');
-				  $('.company-name').removeClass('menu-shrink');
+				  $('.company-name').removeClass('dark-theme');
 			  }
 			});
 
