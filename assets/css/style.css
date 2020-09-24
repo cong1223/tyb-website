@@ -189,6 +189,8 @@ fieldset {
     margin: auto;
     padding: 0 20px;
     width: 70%;
+    font-size: 14px;
+    color: #333333;
 }
 
 @media only screen and (max-width: 768px) {
@@ -949,6 +951,13 @@ video {
     align-items: center;
     padding: 0 10px;
     box-sizing: border-box;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.sing_work_photo .news-desc:hover {
+    background: #03a9f4;
+    color: #ffffff !important;
 }
 
 .sing_work_photo .honor-desc {
