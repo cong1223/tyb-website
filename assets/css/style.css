@@ -193,6 +193,10 @@ fieldset {
     color: #333333;
 }
 
+.section-title p.about-tyb {
+    width: 100%;
+}
+
 @media only screen and (max-width: 768px) {
     .section-title p {
         width: 100%;
