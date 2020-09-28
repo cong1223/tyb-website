@@ -314,9 +314,6 @@ fieldset {
     }
 }
 
-.company-name {
-    color: #ffffff;
-}
 
 @media only screen and (max-width: 480px) {
     .company-name {
@@ -1737,6 +1734,10 @@ video {
     width: 250px;
 }
 
+.navbar-brand img {
+    height: 100%;
+}
+
 /*START FOOTER SOCIAL DESIGN*/
 .footer_social {
     margin-bottom: 10px
@@ -1898,11 +1899,17 @@ video {
 .nav-title .company-name {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     padding-left: 20px;
     font-weight: bold;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 15px;
+}
+
+.nav-title .company-name div {
+    display: flex;
+    align-items: center;
+    line-height: 18px;
 }
 
 .nav-title .dark-theme {
@@ -1912,6 +1919,7 @@ video {
 @media (max-width: 768px) {
     .nav-title .company-name {
         font-size: 16px;
+        padding-left: 10px;
     }
 }
 
