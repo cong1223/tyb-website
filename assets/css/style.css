@@ -1215,10 +1215,15 @@ video {
     height: 368px;
 }
 
-/*.single_team:hover .team_img img {*/
-/*    -webkit-transform: scale(1.3) rotate(-10deg);*/
-/*    transform: scale(1.3) rotate(-10deg)*/
-/*}*/
+.single_team .team_img img.report-img {
+    height: auto;
+    width: 100%;
+}
+
+.single_team .check_img img.check-img {
+    height: auto;
+    width: 50%;
+}
 
 .single_team .team_text {
     color: #222;
@@ -1940,4 +1945,9 @@ banner图该为单张
         background: url(../img/bg/slide2-m.jpg) no-repeat scroll center;
         background-size: cover;
     }
+}
+
+.justify-text {
+    text-align: justify;
+    text-indent: 2rem;
 }
