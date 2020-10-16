@@ -1951,3 +1951,18 @@ banner图该为单张
     text-align: justify;
     text-indent: 2rem;
 }
+
+.platform-images {
+    /*width: 100%;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.platform-image-item {
+    width: 50%;
+}
+@media (max-width: 768px) {
+    .platform-image-item {
+        width: 100%;
+    }
+}
